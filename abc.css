@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:   rgba(22,22,22,0.7);
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color:  rgba(22,22,22,0.7);
+}
+.nav1{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(22,22,22,0.7);
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.nav2{
+    width: 40%;
+    height: 50px;
+    background-color: rgba(22,22,22,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mic{
+    position: absolute;
+    margin-right: 15%;
+}
+#search-symbol{
+    position: absolute;
+    margin-left: 15%;
+}
+#srch{
+    width: 90%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    /* position: absolute; */
+    margin-left: 2%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.navbar{
+            width: 100%;
+            height: fit-content;
+         }
+         a{
+            text-decoration: none;
+            color: #fff;
+         }
+         .a:hover{
+            color: red;
+         }
+         .navbar ul li{
+            display: inline;
+            margin: 20px;
+            display: inline;
+            justify-content: space-between;
+            align-items: center;
+         }
+         .sub{
+            display: none;
+         }
+         .navbar ul li:hover .sub{
+            display: block;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 120px;
+            background-color: brown;
+            z-index: 1;
+         }
+         .navbar ul li:hover .sub ul li{
+            display: block;
+         }
+          
+         /*navbar shows properties  */
+         .shows{
+            display: none;
+         }
+         .navbar ul li:hover .shows{
+            display: block;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 250px;
+            background-color: green;
+            z-index: 1;
+         }
+         .navbar ul li:hover .shows ul li{
+            display: block;
+         } 
+         /*nav bar recipes properties */
+         .back1{
+            display: none;
+         }
+         .navbar ul li:hover .back1{
+            display: block;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 350px;
+            background-color: yellow;
+            z-index: 1;
+         }
+         .navbar ul li:hover .back1 ul li{
+            display: block;
+         }
+         /*  navbar videos  properties */
+         .back2{
+            display: none;
+         }
+         .navbar ul li:hover .back2{
+            display: block;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 460px;
+            background-color: blueviolet;
+            z-index: 1;
+         }
+         .navbar ul li:hover .back2 ul li{
+            display: block;
+         }
+         /*navbar back3 journa properties */
+         .back3{
+            display: none;
+         }
+         .navbar ul li:hover .back3{
+            display: block;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 570px;
+            background-color: chartreuse;
+            z-index: 1;
+         }
+         .navbar ul li:hover .back3 ul li{
+            display: block;
+         }
+         .sub ul li:hover{
+            color: aqua;
+            background-color: black;
+            z-index: 1;
+         }
+
+ /* slide images */
+ #slider{
+    overflow: hidden;
+}
+#slider header{
+    width:400% ;
+    height: 400px;
+    animation-name: slidein;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+#slider header img{
+    width: 25%;
+    float: left;
+}
+@keyframes slidein{
+    0%{
+        left: 0%;
+    }
+    50%{
+        left: -100%;
+    }
+    75%{
+        left: -200%;
+    }
+   100%{
+        left: 0%;
+    }
+}
+/* till here slider images */
+.container{
+width: 100%;
+height: 400px;
+/* background-color: pink; */
+}
+#sub1{
+width: 47%;
+height: 70%;
+background-color:  rgb(17, 49, 231);
+float: left;
+}
+#sub-img{
+width: 50%;
+height: 50%;
+position: absolute;
+}
+#sub2{
+width: 53%;
+height: 70%;
+background-color:   rgba(22,22,22,0.7);
+float: left;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-family: sans-serif;
+color: white;
+}
+#sub3{
+width: 50%;
+height: 50%;
+/* background-color:red; */
+float: left;
+}
+#sub3-img{
+width: 100%;
+height: 100%;
+}
+#sub4{
+width: 50%;
+height: 50%;
+/* background-color: blue; */
+float: left;
+}
+#sub4-img{
+width: 100%;
+height: 100%;
+}
+.symbol{
+    width: 100%;
+    height: 400px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.symbol-box{
+    width: 95%;
+    height: 380px;
+    background-color: #fff;
+}
+.box1{
+    width: 100%;
+    height: 50%;
+    /* background-color: yellow; */
+}
+#bok{
+    width: 20%;
+    height: 100%;
+    background-color:   rgba(22,22,22,0.7);
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+#symbol-img{
+    width: 60%;
+    height: 60%;
+}
+.box2{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(0, 153, 255); */
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 300px;
+    background-color:  rgba(22,22,22,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Last Block  Creation */
+
+.div7{
+    width: 100%;
+    height: 200px;
+    background-color:  rgba(22,22,22,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#div-table{
+    width: 80%;
+    height: 200px;
+    background-color:rgba(22,22,22,0.7) ;
+}
+#table1{
+    width: 100%;
+    height: 150px;
+    text-align: left;
+    text-decoration: underline;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family:  sans-serif;
+    margin-left: 20px;
+
+} 
+#last-language-bar{
+width: 170px;
+height: 35px;
+background: rgba(22,22,22,0.7);
+padding-right: 0.75rem;
+border-color:rgba(128,128,128,0.7);
+color: white;
+border-radius: 5px;
+font-family:  sans-serif;
+
+}
+#last-language-bar:focus{
+border-color:rgba(128,128,128,0.7) ;
+border: 2px solid #ffffff;
+border-radius: 5px;
+}   
+
+ 
